@@ -3,7 +3,6 @@ import { createClient } from "@supabase/supabase-js";
 
 export function Supabase() {
 
-    console.log(import.meta.env)
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
@@ -14,6 +13,18 @@ export function Supabase() {
         import.meta.env.VITE_SUPABASE_URL,
         import.meta.env.VITE_SUPABASE_KEY
     );
+
+    supabase
+        .channel('schema-db-changes')
+        .on(
+            'postgres_changes',
+            {
+                event: 'UPDATE',
+                schema: 'public',
+            },
+            (payload) => console.log(payload)
+        )
+        .subscribe()
 
     async function getUsers() {
         const { data } = await supabase.from("users").select();

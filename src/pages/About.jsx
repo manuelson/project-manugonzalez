@@ -1,4 +1,5 @@
 import {useEffect} from "react";
+import { Supabase } from '../service/Supabase.jsx';
 
 export function About() {
 
@@ -7,8 +8,9 @@ export function About() {
     }, []);
 
   return (
-      <>
-          <span>About page</span>
-      </>
+      <div className="container">
+          <span>Users via supabase</span>
+          <Supabase/>
+      </div>
   )
 }
