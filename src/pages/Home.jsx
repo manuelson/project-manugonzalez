@@ -1,5 +1,10 @@
+import { useEffect } from 'react';
 
 export function Home() {
+
+    useEffect(() => {
+        document.title = 'Manu Gonzalez Home';
+    }, []);
 
     return (
         <div className="container my-5">

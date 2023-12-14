@@ -1,6 +1,7 @@
 import { Home } from "../../pages/Home.jsx";
 import { About } from "../../pages/About.jsx";
 import { Contact } from "../../pages/Contact.jsx";
+import { Blog } from "../../pages/Blog.jsx";
 
 export const Menu = [
     {
@@ -12,7 +13,7 @@ export const Menu = [
     {
         'index': 'Blog',
         'url': '/blog',
-        'element': <About/>,
+        'element': <Blog/>,
         'public': true
 
     },
