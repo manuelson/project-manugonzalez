@@ -3,6 +3,7 @@ import { createClient } from "@supabase/supabase-js";
 
 export function Supabase() {
 
+    console.log(import.meta.env)
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
