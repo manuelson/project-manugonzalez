@@ -1,8 +1,8 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavBar } from './components/NavBar';
-import { Router } from './components/Router';
-import { Footer } from './components/Footer';
+import { NavBar } from './components/NavBar/Index.jsx';
+import { Router } from './components/Router/Index.jsx';
+import { Footer } from './components/Footer/Index.jsx';
 
 function App() {
 
