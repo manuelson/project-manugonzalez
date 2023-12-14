@@ -13,15 +13,17 @@ export function NavBar() {
                     <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                         {
                             Menu.map((item, index) => {
-                                return (
-                                    <li className="nav-item" key={`nav-${index}`}>
-                                        <Link
-                                            className={ `nav-link px-2 ${location === item.url ? 'text-secondary' : 'text-white'}` }
-                                            to={item.url}>
-                                            {item.index}
-                                        </Link>
-                                    </li>
-                                )
+                                if (item.public === true) {
+                                    return (
+                                        <li className="nav-item" key={`nav-${index}`}>
+                                            <Link
+                                                className={`nav-link px-2 ${location === item.path ? 'text-secondary' : 'text-white'}`}
+                                                to={item.path}>
+                                                {item.index}
+                                            </Link>
+                                        </li>
+                                    )
+                                }
                             })
                         }
                     </ul>

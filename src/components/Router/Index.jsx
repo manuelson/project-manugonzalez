@@ -1,18 +1,12 @@
-import { Route, Routes } from 'react-router-dom';
-import { Menu } from './Menu.jsx';
+import { createBrowserRouter } from "react-router-dom"
+import { Layout } from "../../layout/Index.jsx"
+import { Menu } from "./Menu.jsx"
+import { ErrorPage } from "../../pages/ErrorPage.jsx";
 
-
-export function Router() {
-
-    return (
-        <Routes>
-        {
-            Menu.map((item, index) => {
-                return (
-                    <Route key={`router-${index}`} path={item.url} element={item.element}/>
-                )
-            })
-        }
-        </Routes>
-    )
-}
+export const Router = createBrowserRouter([
+    {
+        element: <Layout />,
+        errorElement: <ErrorPage />,
+        children: Menu,
+    },
+]);

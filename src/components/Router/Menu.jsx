@@ -5,29 +5,30 @@ import { Blog } from "../../pages/Blog.jsx";
 
 export const Menu = [
     {
-        'index': 'Home',
-        'url': '/',
-        'element': <Home/>,
-        'public': true
+        index: "Home",
+        path: "/",
+        element: <Home/>,
+        public: true
     },
     {
-        'index': 'Blog',
-        'url': '/blog',
-        'element': <Blog/>,
-        'public': true
-
+        index: "Blog",
+        path: '/blog',
+        element: <Blog/>,
+        public: true
     },
     {
-        'index': 'About us',
-        'url': '/about',
-        'element': <About/>,
-        'public': true
-
+        index: "About",
+        path: '/about',
+        element: <About/>,
+        public: true
     },
     {
-        'index': 'Contact',
-        'url': '/contact',
-        'element': <Contact/>,
-        'public': true
+        index: "Contact",
+        path: '/contact',
+        element: <Contact/>,
+        public: true
     }
 ]
+
+
+
