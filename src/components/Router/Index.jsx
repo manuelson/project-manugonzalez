@@ -9,7 +9,7 @@ export function Router() {
         {
             Menu.map((item, index) => {
                 return (
-                    <Route key={index} path={item.url} element=<item.element/>/>
+                    <Route key={index} path={item.url} element={item.element}/>
                 )
             })
         }

@@ -6,18 +6,18 @@ export const Menu = [
     {
         'index': 'Home',
         'url': '/',
-        'element': Home
+        'element': <Home/>
     },
     {
         'index': 'About us',
         'url': '/about',
-        'element': About
+        'element': <About/>
 
     },
     {
         'index': 'Contact',
         'url': '/contact',
-        'element': Contact
+        'element': <Contact/>
 
     }
 ]
