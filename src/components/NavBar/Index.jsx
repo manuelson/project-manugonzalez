@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
-
-
-export function Navar() {
+export function NavBar() {
 
     return (
         <nav>

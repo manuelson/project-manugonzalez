@@ -1,6 +1,6 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navar } from './components/Navar';
+import { NavBar } from './components/NavBar';
 import { Router } from './components/Router';
 import { Footer } from './components/Footer';
 
@@ -8,7 +8,7 @@ function App() {
 
   return (
       <>
-          <Navar/>
+          <NavBar/>
           <Router/>
           <Footer/>
       </>
