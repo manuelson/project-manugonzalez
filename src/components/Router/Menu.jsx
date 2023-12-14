@@ -6,18 +6,27 @@ export const Menu = [
     {
         'index': 'Home',
         'url': '/',
-        'element': <Home/>
+        'element': <Home/>,
+        'public': true
+    },
+    {
+        'index': 'Blog',
+        'url': '/blog',
+        'element': <About/>,
+        'public': true
+
     },
     {
         'index': 'About us',
         'url': '/about',
-        'element': <About/>
+        'element': <About/>,
+        'public': true
 
     },
     {
         'index': 'Contact',
         'url': '/contact',
-        'element': <Contact/>
-
+        'element': <Contact/>,
+        'public': true
     }
 ]
