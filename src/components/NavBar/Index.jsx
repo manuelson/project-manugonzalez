@@ -1,5 +1,6 @@
 import { Link, useLocation} from 'react-router-dom';
 import { Menu } from '../Router/Menu.jsx';
+import './NavBar.css'
 
 export function NavBar() {
     const location = useLocation().pathname;
@@ -26,7 +27,7 @@ export function NavBar() {
                     </ul>
                     <div className="text-end">
                         <button type="button" className="btn btn-outline-light me-2">Login</button>
-                        <button type="button" className="btn btn-warning">Sign-up</button>
+                        <button type="button" className="btn btn-dark">Sign-up</button>
                     </div>
                 </div>
             </div>
