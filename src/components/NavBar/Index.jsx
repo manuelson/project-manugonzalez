@@ -18,7 +18,7 @@ export function NavBar() {
         <header className="p-3 navbg">
             <Navbar expand="lg" className="">
                 <Container>
-                    <Navbar.Brand href="#home" className="logo">[M]</Navbar.Brand>
+                    <Navbar.Brand href="/" className="logo">[M]</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">

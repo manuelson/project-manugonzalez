@@ -8,3 +8,11 @@ body {
 .text-grey {
     color: #6c757d;
 }
+
+hr {
+    border-color:#AFAFAF;
+}
+
+body {
+    background-color: #f8f9fa;
+}
