@@ -13,7 +13,6 @@ export default class BlogRepository extends Component {
             const database = new Database()
             database.selectAll(this.table).then((data) => {
                 resolve(data)
-                console.log('entro')
             }).catch((error) => {
                 console.error(error)
                 reject(error)
