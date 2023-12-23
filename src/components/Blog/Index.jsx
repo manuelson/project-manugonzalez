@@ -57,7 +57,15 @@ export function Blog() {
                                             {post.title}
                                         </Link>
                                     </div>
-                                    <span className="text-small">{post.created_at}</span>
+                                    <span className="text-small">
+                                         {
+                                             new Date(post.created_at).toLocaleDateString('en-GB', {
+                                                 day: 'numeric',
+                                                 month: 'short',
+                                                 year: 'numeric'
+                                             }.toString())
+                                         }
+                                    </span>
                                 </div>
                             </div>
                         </ListGroup.Item>
