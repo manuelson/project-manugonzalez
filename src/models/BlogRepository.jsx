@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
 import { createClient } from "@supabase/supabase-js";
 import Database from "../service/Database.jsx";
 
-export default class BlogRepository extends Component {
+export default class BlogRepository extends Database {
 
     constructor(props) {
         super(props);
@@ -10,8 +9,7 @@ export default class BlogRepository extends Component {
     }
     getPosts() {
         return new Promise((resolve, reject) => {
-            const database = new Database()
-            database.selectAll(this.table).then((data) => {
+            this.selectAll(this.table).then((data) => {
                 resolve(data)
             }).catch((error) => {
                 console.error(error)
