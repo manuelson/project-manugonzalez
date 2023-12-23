@@ -7,28 +7,45 @@ import {Link} from "react-router-dom";
 export function BlogLayer() {
 
     const [posts, setPosts] = useState([])
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         let blog = new BlogRepository()
+        setLoading(true)
         blog.getPosts().then((data) => {
-            if (data) setPosts(data)
+            setPosts(data)
+            setLoading(false)
         })
     }, [BlogRepository]);
 
-    if (posts.length === 0) {
+    const getStateMessage = (state) => (
+        <section id="blog">
+            <div>
+                <h3>Blog entry</h3>
+            </div>
+            <ListGroup>
+                <ListGroup.Item>
+                    <div className="media align-items-center">
+                        {state}
+                    </div>
+                </ListGroup.Item>
+            </ListGroup>
+        </section>
+    )
+
+    if (posts === null) {
         return(
-            <section id="blog">
-                <div>
-                    <h3>Blog entry</h3>
-                </div>
-                <ListGroup>
-                    <ListGroup.Item>
-                        <div className="media align-items-center">
-                            No blog entries were found.
-                        </div>
-                    </ListGroup.Item>
-                </ListGroup>
-            </section>
+            getStateMessage('An error ocurred while get information.')
+        )
+    }
+    if (loading) {
+        return(
+            getStateMessage('Loading...')
+        )
+    }
+    if (posts.length === 0 && !loading) {
+        return(
+            getStateMessage('No blog entries were found.')
         )
     }
 
