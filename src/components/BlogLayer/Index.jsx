@@ -1,11 +1,10 @@
 import ListGroup from "react-bootstrap/ListGroup";
 import avatar from "../../assets/avatar-manu.png";
-import Database  from "../../service/Database.jsx";
 import { useState, useEffect } from "react";
 import BlogRepository from "../../models/BlogRepository.jsx";
 import {Link} from "react-router-dom";
 
-export function Blog() {
+export function BlogLayer() {
 
     const [posts, setPosts] = useState([])
 
@@ -35,7 +34,7 @@ export function Blog() {
 
     return (
         <section id="blog">
-            <div>
+            <div className="mb-4">
                 <h3>Blog entry</h3>
             </div>
             <ListGroup>

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import avatar from '../assets/avatar-manu.png';
-import { Blog } from '../components/Blog/Index.jsx';
+import { BlogLayer } from '../components/BlogLayer/Index.jsx';
 
 export function Home() {
 
@@ -21,7 +21,7 @@ export function Home() {
                         </section>
                     </div>
                 </div>
-               <Blog />
+               <BlogLayer />
             </div>
         </>
     )
