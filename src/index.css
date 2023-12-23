@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;300;400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -15,4 +15,51 @@ hr {
 
 body {
     background-color: #f8f9fa;
+}
+
+/** FOR HOME **/
+
+.align-items-center {
+    align-items: center !important;
+}
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.avatars {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+.list-group-activity .avatars > li:first-child {
+    position: relative;
+    z-index: 2;
+}
+.avatar.bg-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    border: 2px solid #f8f9fa;
+    background: #f8f9fa;
+    color: #fff;
+}
+
+.list-group-activity span {
+    margin-right: 0.25rem;
+}
+
+.text-small {
+    font-size: .825rem;
+    color: #6c757d;
+    line-height: 1.3125rem;
+}
+
+.list-group {
+    font-size:14px;
 }

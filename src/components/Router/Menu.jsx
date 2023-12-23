@@ -41,6 +41,12 @@ export const Menu = [
         path: '/profile/:userId',
         element: <Profile/>,
         public: false
+    },
+    {
+        index: "Post",
+        path: '/post/:id',
+        element: <Profile/>,
+        public: false
     }
 ]
 

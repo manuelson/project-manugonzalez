@@ -27,6 +27,7 @@ export function NavBar() {
                                     if (item.public === true) {
                                         return (
                                             <Link
+                                                key={`nav-${index}`}
                                                 className={`nav-link px-2 ${location === item.path ? 'text-secondary' : 'text-white'}`}
                                                 to={item.path}>
                                                 {item.index}
