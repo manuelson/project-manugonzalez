@@ -52,6 +52,14 @@ export function BlogLayer() {
                         <Skeleton />
                         <Skeleton className="skeletonWidht" />
                     </ListGroup.Item>
+                    <ListGroup.Item>
+                        <Skeleton />
+                        <Skeleton className="skeletonWidht" />
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                        <Skeleton />
+                        <Skeleton className="skeletonWidht" />
+                    </ListGroup.Item>
                 </ListGroup>
             </section>
         )
