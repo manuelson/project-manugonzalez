@@ -4,6 +4,7 @@ import BlogRepository from "../models/BlogRepository.jsx";
 import avatar from "../assets/avatar-manu.png";
 import ListGroup from "react-bootstrap/ListGroup";
 import {Link} from "react-router-dom";
+import Skeleton from "react-loading-skeleton";
 
 
 export function Blog() {
@@ -20,11 +21,66 @@ export function Blog() {
         })
     }, [BlogRepository]);
 
+    if (loading) {
+        return(
+            <div className="container mt-4">
+                <div className="row">
+                    <div className="post mb-4">
+                        <h2 className="post-title fw-semibold">
+                            <Skeleton />
+                        </h2>
+                        <div className="d-flex align-items-center mb-4 text-muted author-info">
+                            <a className="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+                                <Skeleton />
+                            </a>
+                            <span className="d-flex align-items-center ms-3" title="12 Sep 23 00:01 UTC">
+                                <Skeleton />
+                            </span>
+                        </div>
+                        <p>
+                            <Skeleton count={5} />
+                        </p>
+                    </div>
+                    <div className="post mb-4">
+                        <h2 className="post-title fw-semibold">
+                            <Skeleton />
+                        </h2>
+                        <div className="d-flex align-items-center mb-4 text-muted author-info">
+                            <a className="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+                                <Skeleton />
+                            </a>
+                            <span className="d-flex align-items-center ms-3" title="12 Sep 23 00:01 UTC">
+                                <Skeleton />
+                            </span>
+                        </div>
+                        <p>
+                            <Skeleton count={5} />
+                        </p>
+                    </div>
+                    <div className="post mb-4">
+                        <h2 className="post-title fw-semibold">
+                            <Skeleton />
+                        </h2>
+                        <div className="d-flex align-items-center mb-4 text-muted author-info">
+                            <a className="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
+                                <Skeleton />
+                            </a>
+                            <span className="d-flex align-items-center ms-3" title="12 Sep 23 00:01 UTC">
+                                <Skeleton />
+                            </span>
+                        </div>
+                        <p>
+                            <Skeleton count={5} />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 
     return (
         <>
             <div className="container mt-4">
-
                 <div className="row">
                     {
                         posts.map((post, index) => (

@@ -22,13 +22,13 @@ export const Menu = [
         index: "About",
         path: '/about',
         element: <About/>,
-        public: true
+        public: false
     },
     {
         index: "Contact",
         path: '/contact',
         element: <Contact/>,
-        public: true
+        public: false
     },
     {
         index: "Login",
