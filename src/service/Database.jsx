@@ -13,7 +13,11 @@ export default class Database extends Component {
     }
 
     async selectAll(table) {
-        const { data } = await this.supabase.from(table).select();
+        const { data } = await this.supabase
+            .from(table)
+            .select()
+            .order('created_at', {ascending: false})
+
         return data
     }
 

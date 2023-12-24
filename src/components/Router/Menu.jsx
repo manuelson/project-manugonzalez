@@ -44,7 +44,7 @@ export const Menu = [
     },
     {
         index: "Post",
-        path: '/post/:id',
+        path: 'post/:id',
         element: <Profile/>,
         public: false
     }

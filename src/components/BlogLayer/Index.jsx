@@ -41,6 +41,11 @@ export function BlogLayer() {
             getStateMessage('An error ocurred while get information.')
         )
     }
+    if (posts.length === 0 && !loading) {
+        return(
+            getStateMessage('No blog entries were found.')
+        )
+    }
     if (loading) {
         return(
             <section id="blog">
@@ -64,11 +69,6 @@ export function BlogLayer() {
             </section>
         )
     }
-    if (posts.length === 0 && !loading) {
-        return(
-            getStateMessage('No blog entries were found.')
-        )
-    }
 
     return (
         <section id="blog">
@@ -87,10 +87,10 @@ export function BlogLayer() {
                                 </ul>
                                 <div className="media-body">
                                     <div>
-                                        <span className="text-"><strong>Manu</strong> </span>
+                                        <span className="text-"><strong>{post.author}</strong> </span>
                                         <span className="text-grey text-muted">added blog entry </span>
                                         <Link
-                                            to={`post/${post.id}`}>
+                                            to={`/post/${post.id}`}>
                                             {post.title}
                                         </Link>
                                     </div>
