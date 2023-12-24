@@ -3,6 +3,9 @@ import avatar from "../../assets/avatar-manu.png";
 import { useState, useEffect } from "react";
 import BlogRepository from "../../models/BlogRepository.jsx";
 import {Link} from "react-router-dom";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+import './BlogLayer.css'
 
 export function BlogLayer() {
 
@@ -40,7 +43,17 @@ export function BlogLayer() {
     }
     if (loading) {
         return(
-            getStateMessage('Loading...')
+            <section id="blog">
+                <div>
+                    <h3>Blog entry</h3>
+                </div>
+                <ListGroup>
+                    <ListGroup.Item>
+                        <Skeleton />
+                        <Skeleton className="skeletonWidht" />
+                    </ListGroup.Item>
+                </ListGroup>
+            </section>
         )
     }
     if (posts.length === 0 && !loading) {
