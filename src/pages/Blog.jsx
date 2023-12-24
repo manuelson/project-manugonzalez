@@ -5,7 +5,7 @@ import avatar from "../assets/avatar-manu.png";
 import ListGroup from "react-bootstrap/ListGroup";
 import {Link} from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
-
+import './Blog.css'
 
 export function Blog() {
 
@@ -29,14 +29,9 @@ export function Blog() {
                         <h2 className="post-title fw-semibold">
                             <Skeleton />
                         </h2>
-                        <div className="d-flex align-items-center mb-4 text-muted author-info">
-                            <a className="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-                                <Skeleton />
-                            </a>
-                            <span className="d-flex align-items-center ms-3" title="12 Sep 23 00:01 UTC">
-                                <Skeleton />
-                            </span>
-                        </div>
+                        <Skeleton width="30px" height="30px" circle="true" inline="true" />
+                        <Skeleton width="140px" className="skeletonDate" />
+
                         <p>
                             <Skeleton count={5} />
                         </p>
@@ -45,14 +40,9 @@ export function Blog() {
                         <h2 className="post-title fw-semibold">
                             <Skeleton />
                         </h2>
-                        <div className="d-flex align-items-center mb-4 text-muted author-info">
-                            <a className="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-                                <Skeleton />
-                            </a>
-                            <span className="d-flex align-items-center ms-3" title="12 Sep 23 00:01 UTC">
-                                <Skeleton />
-                            </span>
-                        </div>
+                        <Skeleton width="30px" height="30px" circle="true" inline="true" />
+                        <Skeleton width="140px" className="skeletonDate" />
+
                         <p>
                             <Skeleton count={5} />
                         </p>
@@ -61,14 +51,9 @@ export function Blog() {
                         <h2 className="post-title fw-semibold">
                             <Skeleton />
                         </h2>
-                        <div className="d-flex align-items-center mb-4 text-muted author-info">
-                            <a className="d-flex align-items-center text-muted text-decoration-none" href="https://github.com/mdo" target="_blank" rel="noopener">
-                                <Skeleton />
-                            </a>
-                            <span className="d-flex align-items-center ms-3" title="12 Sep 23 00:01 UTC">
-                                <Skeleton />
-                            </span>
-                        </div>
+                        <Skeleton width="30px" height="30px" circle="true" inline="true" />
+                        <Skeleton width="140px" className="skeletonDate" />
+
                         <p>
                             <Skeleton count={5} />
                         </p>
