@@ -64,7 +64,7 @@ footer {
 
 
 .icon-menu {
-    width:1.25rem;
+    width:20px;
     fill: none;
     stroke: var(--text-color);
 }
