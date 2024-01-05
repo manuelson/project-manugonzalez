@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import ListGroup from 'react-bootstrap/ListGroup';
-import avatar from '../assets/avatar-manu.png';
-import { BlogLayer } from '../components/BlogLayer/Index.jsx';
+import {Banner} from "../components/Banner/Index.jsx";
+import {Skills} from "../components/Skills/Index.jsx";
+import {Link} from "react-router-dom";
 
 export function Home() {
 
@@ -10,19 +10,46 @@ export function Home() {
     }, []);
     return (
         <>
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-11 col-xl-9">
-                        <section className="py-4 py-lg-5">
-                            <h1 className="display-4 mb-3">Welcome to my world.</h1>
-                            <p className="lead text-grey">
-                                Hi, I'm Manu Gonzalez, full stack developer.
-                            </p>
-                        </section>
-                    </div>
+            <Banner />
+            <section id="pages" className="container mt-5">
+                <h2 className="h6">
+                    Pages
+                </h2>
+                <hr />
+                <div className="d-md-flex nav-cards gap-4 ">
+                    <Link
+                        className="p-4 rounded-3 animate__animated  animate__fadeInUp"
+                        to={`/blog`}>
+                        <h3 className="h6">Blog</h3>
+                        <p className="">Read what I share</p>
+                    </Link>
+                    <Link
+                        className="p-4 rounded-3 animate__animated  animate__fadeInUp card-delay-1"
+                        to={`/portfolio`}>
+                        <h3 className="h6">Portfolio</h3>
+                        <p>
+                            Projects, experiences knowledge
+                        </p>
+                    </Link>
                 </div>
-               <BlogLayer />
-            </div>
+                <div className="d-md-flex nav-cards gap-4 mt-4">
+                    <Link
+                        className="p-4 rounded-3 animate__animated  animate__fadeInUp card-delay-2"
+                        to={`/about`}>
+                        <h3 className="h6">About</h3>
+                        <p className="">Read more about me</p>
+                    </Link>
+                    <Link
+                        className="p-4 rounded-3 animate__animated  animate__fadeInUp card-delay-3"
+                        to={`/portfolio`}>
+                        <h3 className="h6">Let's talk</h3>
+                        <p>
+                            Any questions?
+                        </p>
+                    </Link>
+                </div>
+            </section>
+            <Skills />
         </>
     )
 }

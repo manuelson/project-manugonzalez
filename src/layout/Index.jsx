@@ -7,10 +7,10 @@ export function Layout() {
 
   return (
       <>
-          <header>
-              <NavBar />
-          </header>
-          <Outlet />
+          <NavBar />
+          <main className="mt-5">
+              <Outlet />
+          </main>
           <Footer />
       </>
   )
