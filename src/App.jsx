@@ -223,7 +223,8 @@ function App() {
                       <span className="hidden md:inline-flex"> - Nothing reserved :)</span>
                   </small>
                   <small className="text-grey-only">Built with love in
-                      <a target="_blank" href="https://react.dev/" className="text-advice"> React native</a>
+                      <a target="_blank" href="https://react.dev/" className="text-advice"> React native</a> and
+                      <a target="_blank" href="https://supabase.com/" className="text-advice"> Supabase</a>
                   </small>
               </div>
           </footer>
