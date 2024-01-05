@@ -1,19 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;300;400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to top right,#111,#001c15);
+    color: white;
+    font-family: 'Inter';
+    font-size:14px;
+    position:relative;
 }
 
 
-.text-grey {
-    color: #6c757d;
+body:before {
+    content: "";
+    background-image: url(./assets/grid.svg);
+    background-repeat: repeat;
+    position: absolute;
+    inset: 0;
+    opacity: .2;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 hr {
-    border-color:#AFAFAF;
+    color: hsla(0,0%,100%,.30);
 }
 
-body {
-    background-color: #f8f9fa;
+footer {
+    font-size:12px
 }
 
+
+.icon-menu {
+    width:1.25rem;
+}
+
+.logo {
+    width:50px;
+    height:50px;
+    transform: rotate(0deg);
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    transform: rotate(15deg);
+    transition: all .2s ease-in-out;
+}
+
+.button-menu {
+    width: 35px;
+    height: 35px;
+    background: rgba(204, 204, 204, 0.04);
+    border: 0px;
+}
+.cls-1{fill:#FFFFFF;}
+
+.cls-2{fill:none;}
+
+.text-advice {
+    color: rgb(65, 255, 201);
+}
+
+.text-grey {
+    font-size:18px;
+    color: rgb(189, 189, 189);
+}
+
+.text-grey-only {
+    color: rgb(189, 189, 189);
+}
+
+.avatar-banner {
+    width: 250px;
+    height:250px;
+}
+
+div.nav-cards {
+    border-radius: 10px;
+    transition: all .1s ease-in-out;
+
+}
+
+.nav-cards a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.04);
+    width: 100%;
+    transition: all .4s ease-in-out;
+}
+
+.card-delay-1 {
+    animation-delay: 0.2s;
+}
+.card-delay-2 {
+    animation-delay: 0.4s;
+
+}
+.card-delay-3 {
+    animation-delay: 0.6s;
+}
+
+.nav-cards a:hover {
+    background-color: #ffffff0f;
+    transition: all .6s ease-in-out;
+}
+
+.nav-cards a p {
+    color: rgb(189, 189, 189);
+    font-size:15px;
+}
+
+.skill-card {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.04);
+    transition: all .4s ease-in-out;
+}
+
+.skill-card:hover {
+    background-color: #ffffff0f;
+    transition: all .6s ease-in-out;
+}
+
+.react-bg {
+    background-color: #7ee1fc26;
+    width: 35px;
+    height: 35px;
+}
+
+#pages {
+    max-width: 960px;
+}
+
+#skills {
+    max-width: 960px;
+}
+
+.title {
+    font-weight: 200;
+}
+
+@media (max-width: 575.98px){
+    .skill-card {
+        width:100%;
+        flex: none;
+        display: inline;
+    }
+    .avatar-banner {
+        width: 150px;
+        height:150px;
+        display:block;
+        margin-bottom:20px;
+    }
+    .nav-cards a {
+        display: block;
+        margin-bottom:25px;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .avatar-banner {
+        width: 150px;
+        height:150px;
+        display:block;
+        margin-bottom:20px;
+    }
+    .nav-cards a {
+        display: block;
+        margin-bottom:25px;
+    }
+    .text-banner {
+        font-size:16px;
+    }
+    .title {
+        font-size:25px;
+    }
+}
