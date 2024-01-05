@@ -4,6 +4,7 @@ import {Router} from "./components/Router/Index.jsx"
 import avatar from './assets/avatar-manu-memoji.png';
 import 'animate.css';
 import {LightModeToggle} from "./components/Toggle/Index.jsx";
+import {Footer} from "./components/Footer/Index.jsx";
 
 function App() {
 
@@ -211,21 +212,7 @@ function App() {
                   </ul>
               </section>
           </main>
-
-
-          <footer className="container my-5 mt-5">
-              <hr />
-              <div className="d-flex justify-content-between">
-                  <small className="text-grey-only">2024
-                      <span className="hidden md:inline-flex"> - Nothing reserved :)</span>
-                  </small>
-                  <small className="text-grey-only">Built with love in
-                      <a target="_blank" href="https://react.dev/" className="text-advice"> React native</a> and
-                      <a target="_blank" href="https://supabase.com/" className="text-advice"> Supabase</a>
-                  </small>
-              </div>
-          </footer>
-
+          <Footer />
       </>
   )
 }

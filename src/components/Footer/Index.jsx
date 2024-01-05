@@ -2,12 +2,16 @@
 export function Footer() {
 
     return (
-        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-            <div className="col-md-4 d-flex align-items-center">
-                <a href="/" className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                    <svg className="bi" width="30" height="24"></svg>
-                </a>
-                <span className="mb-3 mb-md-0 text-body-secondary">© 2023 Manu Gonzalez - Full Stack developer</span>
+        <footer className="container my-5 mt-5">
+            <hr />
+            <div className="d-flex justify-content-between">
+                <small className="text-grey-only">2024
+                    <span className="hidden md:inline-flex"> - Nothing reserved :)</span>
+                </small>
+                <small className="text-grey-only">Built with love in
+                    <a href="https://react.dev/" className="text-advice"> React native</a> and
+                    <a href="https://supabase.com/" className="text-advice"> Supabase</a>
+                </small>
             </div>
         </footer>
     )
