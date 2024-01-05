@@ -87,7 +87,7 @@ footer {
     width: 2.2rem;
     height: 2.2rem;
     background: rgba(204, 204, 204, 0.04);
-    border: 0px solid #000;
+    border: 0 solid #000;
     margin: 0 auto;
 }
 .cls-1{
