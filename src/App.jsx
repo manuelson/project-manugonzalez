@@ -191,11 +191,20 @@ function App() {
                           </svg>
                           <span className="justify-content-center px-3">Laravel</span>
                       </li>
-                      <li className="rounded-3 p-3 col"></li>
+                      <li className="skill-card rounded-3 p-3 col">
+                          <svg
+                              className="justify-content-center react-bg p-2 rounded-2"
+                              viewBox="-23.5 0 303 303"
+                              xmlns="http://www.w3.org/2000/svg"
+                              preserveAspectRatio="xMidYMid"
+                          ><path d="M144.852 90.67v172.192l-16.933 10.349-16.946-10.404V90.803l-43.878 27.016v147.255l60.824 37.217 61.339-37.482V117.725L144.852 90.67zM127.919 0L0 77.502v147.274l33.223 19.572V97.06l94.722-57.596 94.81 57.512.391.223-.042 146.929L256 224.776V77.502L127.919 0z" fill="#EC6737"/></svg>
+                          <span className="justify-content-center px-3">Magento e-commerce</span>
+                      </li>
                       <li className="rounded-3 p-3 col"></li>
                   </ul>
               </section>
           </main>
+
 
           <footer className="container my-5 mt-5">
               <hr />
