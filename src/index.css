@@ -43,8 +43,6 @@ body:before {
     pointer-events: none;
 }
 
-button svg { width: 2rem; height: 2rem; }
-
 p {
     margin: 0;
 }
@@ -69,7 +67,7 @@ footer {
 
 .icon-menu {
     width:1.25rem;
-    fill: none;
+    height:1.25rem;
     stroke: var(--text-color);
 }
 
