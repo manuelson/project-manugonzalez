@@ -10,8 +10,10 @@ export const LightModeToggle = () => {
 
     useEffect(() => {
         if (localStorage.getItem('is_light') === 'true') {
+            setIsLight(true)
             document.body.classList.add('light');
         } else {
+            setIsLight(false)
             document.body.classList.remove('light');
         }
     }, [isLight]);
