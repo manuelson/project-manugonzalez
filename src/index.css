@@ -12,6 +12,7 @@ body {
     --text-grey: rgb(189, 189, 189);
     --nav-cards-bg: rgba(255, 255, 255, 0.04);
     --hr-bg: hsla(0,0%,100%,.30);
+    --nav-card-hover: #ffffff0f;
 }
 
 body.light {
@@ -27,6 +28,7 @@ body.light {
     --text-grey: #161616;
     --nav-cards-bg: rgba(5,25,20,.05);
     --hr-bg: rgba(5,25,20,.30);
+    --nav-card-hover:  rgba(5,25,20,.10);
 }
 
 body:before {
@@ -137,7 +139,7 @@ div.nav-cards {
 }
 
 .nav-cards a:hover {
-    background-color: #ffffff0f;
+    background-color: var(--nav-card-hover);
     transition: all .6s ease-in-out;
 }
 
@@ -154,7 +156,7 @@ div.nav-cards {
 }
 
 .skill-card:hover {
-    background-color: #ffffff0f;
+    background-color: var(--nav-card-hover);
     transition: all .6s ease-in-out;
 }
 
