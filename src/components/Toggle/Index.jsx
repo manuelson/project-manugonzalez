@@ -51,9 +51,5 @@ export const LightModeToggle = () => {
         )
     }
 
-    if (isLight) {
-        return lightIcon()
-    } else {
-        return darkIcon()
-    }
+    return isLight ? lightIcon() : darkIcon()
 };
