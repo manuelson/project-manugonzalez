@@ -43,7 +43,7 @@ body:before {
     pointer-events: none;
 }
 
-button svg { width: 2rem; height: 2rem; )
+button svg { width: 2rem; height: 2rem; }
 
 p {
     margin: 0;
