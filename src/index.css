@@ -113,6 +113,11 @@ footer {
     height:250px;
 }
 
+.avatar-banner:hover {
+    animation: wobble;
+    animation-duration: 1s;
+}
+
 div.nav-cards {
     border-radius: 10px;
     transition: all .1s ease-in-out;
@@ -176,6 +181,11 @@ div.nav-cards {
 
 .title {
     font-weight: 200;
+}
+
+.skill-card:hover {
+    animation: headShake;
+    animation-duration: 1s;
 }
 
 @media (max-width: 575.98px){
