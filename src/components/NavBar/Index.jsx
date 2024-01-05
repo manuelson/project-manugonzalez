@@ -14,7 +14,7 @@ export function NavBar() {
             </a>
             <div className="d-flex gap-3">
                 <LightModeToggle></LightModeToggle>
-                <button className="rounded-circle button-menu">
+                <a className="rounded-circle button-menu d-flex justify-content-center align-items-center align-content-center">
                     <svg
                         className="icon-menu"
                         viewBox="0 0 24 24"
@@ -22,7 +22,7 @@ export function NavBar() {
                     >
                         <path d="M4 6H20M4 12H20M4 18H20" strokeWidth="2"/>
                     </svg>
-                </button>
+                </a>
             </div>
         </header>
     )

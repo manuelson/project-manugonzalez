@@ -20,7 +20,7 @@ export const LightModeToggle = () => {
 
     const lightIcon = () => {
         return (
-            <a className="rounded-circle button-menu d-flex justify-content-center align-content-center" onClick={handleToggle}>
+            <a className="rounded-circle button-menu d-flex justify-content-center align-items-center align-content-center" onClick={handleToggle}>
                 <svg
                     className="icon-menu"
                     viewBox="0 0 24 24"
@@ -33,7 +33,7 @@ export const LightModeToggle = () => {
 
     const darkIcon = () => {
         return (
-            <a className="rounded-circle button-menu d-flex justify-content-center align-content-center" onClick={handleToggle}>
+            <a className="rounded-circle button-menu d-flex justify-content-center align-items-center align-content-center" onClick={handleToggle}>
                 <svg
                     className="icon-menu"
                     viewBox="0 0 24 24"
