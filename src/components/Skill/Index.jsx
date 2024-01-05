@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 export function Skill({icon, text}) {
 
@@ -8,3 +9,8 @@ export function Skill({icon, text}) {
         </li>
     )
 }
+
+Skill.propTypes = {
+    icon: PropTypes.string,
+    text: PropTypes.string,
+};

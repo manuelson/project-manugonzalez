@@ -1,7 +1,12 @@
+import {Banner} from "../components/Banner/Index.jsx";
+
 export function About() {
   return (
-      <div className="container">
-          <span>Under construction</span>
-      </div>
+      <>
+        <Banner />
+        <div className="container mt-5">
+              <span>Under construction</span>
+          </div>
+      </>
   )
 }
