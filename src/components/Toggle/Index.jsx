@@ -5,10 +5,11 @@ export const LightModeToggle = () => {
 
     const handleToggle = () => {
         setIsLight(!isLight)
+        localStorage.setItem('is_light', !isLight);
     }
 
     useEffect(() => {
-        if (isLight) {
+        if (localStorage.getItem('is_light') === 'true') {
             document.body.classList.add('light');
         } else {
             document.body.classList.remove('light');

@@ -7,13 +7,9 @@ import {LightModeToggle} from "./components/Toggle/Index.jsx";
 
 function App() {
 
-    const handleMenu = (e) => {
-        console.log('test')
-    }
-
     return (
       <>
-          <header className="mt-4 w-90 justify-content-center d-flex justify-content-between container" onClick={handleMenu}>
+          <header className="mt-4 w-90 justify-content-center d-flex justify-content-between container">
               <a href="#" >
                   <svg
                       className="logo rounded-5"
