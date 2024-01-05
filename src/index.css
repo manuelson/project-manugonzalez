@@ -1,14 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 body {
-    background: linear-gradient(to top right,#111,#001c15);
+    background: linear-gradient(to top right, #111, #001c15);
     color: white;
     font-family: 'Inter';
-    font-size:14px;
-    position:relative;
+    font-size: 14px;
+    position: relative;
+    --logo-color: #ffffff;
+    --text-color: #FFFFFF;
+    --text-advice: rgb(65, 255, 201);
+    --text-grey: rgb(189, 189, 189);
+    --nav-cards-bg: rgba(255, 255, 255, 0.04);
+    --hr-bg: hsla(0,0%,100%,.30);
 }
 
+body.light {
+    background: rgb(240 249 247/1);
+    color: white;
+    font-family: 'Inter';
+    font-size: 14px;
+    position: relative;
+    color: rgb(5, 25, 20);
+    --logo-color: #161616;
+    --text-color: #161616;
+    --text-advice: rgb(0 141 109/1);
+    --text-grey: #161616;
+    --nav-cards-bg: rgba(5,25,20,.05);
+    --hr-bg: rgba(5,25,20,.30);
+}
 
 body:before {
     content: "";
@@ -36,7 +55,7 @@ ul {
 }
 
 hr {
-    color: hsla(0,0%,100%,.30);
+    color: var(--hr-bg);
 }
 
 footer {
@@ -46,6 +65,8 @@ footer {
 
 .icon-menu {
     width:1.25rem;
+    fill: none;
+    stroke: var(--text-color);
 }
 
 .logo {
@@ -66,21 +87,23 @@ footer {
     background: rgba(204, 204, 204, 0.04);
     border: 0px;
 }
-.cls-1{fill:#FFFFFF;}
+.cls-1{
+    fill:var(--logo-color);
+}
 
 .cls-2{fill:none;}
 
 .text-advice {
-    color: rgb(65, 255, 201);
+    color: var(--text-advice);
 }
 
 .text-grey {
     font-size:18px;
-    color: rgb(189, 189, 189);
+    color: var(--text-grey);
 }
 
 .text-grey-only {
-    color: rgb(189, 189, 189);
+    color: var(--text-grey)
 }
 
 .avatar-banner {
@@ -96,8 +119,8 @@ div.nav-cards {
 
 .nav-cards a {
     text-decoration: none;
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.04);
+    color: var(--text-color);
+    background-color: var(--nav-cards-bg);
     width: 100%;
     transition: all .4s ease-in-out;
 }
@@ -119,14 +142,14 @@ div.nav-cards {
 }
 
 .nav-cards a p {
-    color: rgb(189, 189, 189);
+    color: var(--text-grey);
     font-size:15px;
 }
 
 .skill-card {
     text-decoration: none;
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.04);
+    color: var(--text-color);
+    background-color: var(--nav-cards-bg);
     transition: all .4s ease-in-out;
 }
 

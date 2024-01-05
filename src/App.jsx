@@ -3,6 +3,7 @@ import {RouterProvider} from "react-router-dom"
 import {Router} from "./components/Router/Index.jsx"
 import avatar from './assets/avatar-manu-memoji.png';
 import 'animate.css';
+import {LightModeToggle} from "./components/Toggle/Index.jsx";
 
 function App() {
 
@@ -22,31 +23,15 @@ function App() {
                   ><path className="cls-1" d="M4,4V28H28V4ZM23.9385,9.6865,22.6514,10.92a.3766.3766,0,0,0-.1431.3613v9.0674a.3765.3765,0,0,0,.1431.3613l1.257,1.2339v.271h-6.323v-.271L18.8877,20.68c.1279-.128.1279-.1656.1279-.3609V12.99l-3.62,9.1958H14.906L10.6907,12.99v6.1631a.8505.8505,0,0,0,.2334.7071l1.6936,2.0547v.2709H7.8154v-.2709L9.509,19.86a.82.82,0,0,0,.2183-.7071V12.0264A.6231.6231,0,0,0,9.5239,11.5L8.0186,9.6865v-.271h4.6743l3.613,7.9239,3.1765-7.9239h4.4561Z"/><path id="inner-path" className="cls-2" d="M9.7273,12.0266A.6246.6246,0,0,0,9.524,11.5L8.0186,9.6863V9.4154H12.693l3.613,7.9238,3.1764-7.9238h4.4561v.2709L22.6513,10.92a.3763.3763,0,0,0-.143.3612v9.0676a.3763.3763,0,0,0,.143.3612l1.2571,1.2341v.2709H17.5856v-.2709L18.8878,20.68c.1279-.1279.1279-.1656.1279-.3612V12.99l-3.62,9.1955h-.4893L10.6907,12.99v6.1629a.8506.8506,0,0,0,.2334.7074l1.6936,2.0543v.2709H7.8154v-.2709L9.509,19.86a.82.82,0,0,0,.2183-.7074Z"/><rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" className="cls-2"/></svg>
               </a>
               <div className="d-flex gap-3">
-                  <button className="rounded-circle button-menu align-items-center justify-content-center d-flex" onClick={handleMenu}>
-                      <svg
-                          className="icon-menu"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                      >
-                          <circle cx="12" cy="12" r="5" stroke="#FFFFFF" strokeWidth="1.5"/>
-                          <path d="M12 2V4" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round"/>
-                          <path d="M12 20V22" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round"/>
-                          <path d="M4 12L2 12" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round"/>
-                          <path d="M22 12L20 12" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round"/>
-                          <path d="M19.7778 4.22266L17.5558 6.25424" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round"/>
-                          <path d="M4.22217 4.22266L6.44418 6.25424" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round"/>
-                          <path d="M6.44434 17.5557L4.22211 19.7779" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round"/>
-                          <path d="M19.7778 19.7773L17.5558 17.5551" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round"/>
-                      </svg>
-                  </button>
+                  <LightModeToggle></LightModeToggle>
                   <button className="rounded-circle button-menu align-items-center justify-content-center d-flex">
                       <svg
                           className="icon-menu"
                           viewBox="0 0 24 24" fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                       >
-                          <path d="M4 6H20M4 12H20M4 18H20" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                          <path d="M4 6H20M4 12H20M4 18H20"
+                            strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                   </button>
               </div>
