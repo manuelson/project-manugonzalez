@@ -24,6 +24,7 @@ body.light {
     position: relative;
     height: 100vh;
     color: rgb(5, 25, 20);
+    filter: invert(1);
     --logo-color: #161616;
     --text-color: #161616;
     --text-advice: rgb(0 141 109/1);
@@ -44,6 +45,7 @@ body:before {
     height: 100%;
     pointer-events: none;
 }
+
 
 p {
     margin: 0;
