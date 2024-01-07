@@ -12,9 +12,7 @@ export function Home() {
         <>
             <Banner />
             <section id="pages" className="container mt-5">
-                <h2 className="h6">
-                    Pages
-                </h2>
+                <h2 className="h6">Pages</h2>
                 <hr />
                 <div className="d-md-flex nav-cards gap-4 ">
                     <Link
