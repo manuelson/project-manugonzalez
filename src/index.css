@@ -69,7 +69,9 @@ hr {
 }
 
 footer {
-    font-size:12px
+    font-size:12px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -197,11 +199,26 @@ div.nav-cards {
     animation-duration: 1s;
 }
 
-@media (max-width: 575.98px){
+.skills {
+    row-gap: .5rem;
+    column-gap: .5rem;
+    display:grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+
+@media (max-width: 575.98px) {
+
+    .skills {
+        row-gap: .5rem;
+        column-gap: .5rem;
+        display:grid;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
     .skill-card {
-        width:100%;
-        flex: none;
-        display: inline;
+        gap: 0.75rem;
+        align-items: center;
+        display: flex;
     }
     .avatar-banner {
         width: 150px;
@@ -217,6 +234,13 @@ div.nav-cards {
 }
 
 @media (max-width: 767.98px) {
+    .skills {
+        row-gap: .5rem;
+        column-gap: .5rem;
+        display:grid;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    
     .avatar-banner {
         width: 150px;
         height:150px;
