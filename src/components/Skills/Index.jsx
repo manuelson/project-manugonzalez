@@ -7,7 +7,8 @@ import {
     PhpSvg,
     ReactSvg,
     TailwindSvg,
-    TypescriptSvg
+    TypescriptSvg,
+    SymfonySvg
 } from "../SvgIcons/Index.jsx";
 
 export function Skills() {
@@ -27,17 +28,15 @@ export function Skills() {
                 <Skill icon={<TailwindSvg/>} text='Tailwind' />
                 <Skill icon={<HtmlSvg/>} text='HTML' />
                 <Skill icon={<CssSvg/>} text='CSS' />
-                <Skill icon='' text='' />
-                <Skill icon='' text='' />
             </ul>
-            <h2 className="text-small mt-2">Backend</h2>
+            <h2 className="text-small mt-4">Backend</h2>
             <ul className=" mx-0 my-0 skills">
                 <Skill icon={<PhpSvg/>} text='PHP' />
-                <Skill icon={<GithubSvg/>} text='Github' />
                 <Skill icon={<LaravelSvg/>} text='Laravel' />
+                <Skill icon={<SymfonySvg/>} text='Symfony' />
                 <Skill icon={<MagentoSvg/>} text='Magento' />
+                <Skill icon={<GithubSvg/>} text='Github' />
                 <Skill icon={<MysqlSvg/>} text='Mysql' />
-                <Skill icon='' text='' />
             </ul>
         </section>
     )
