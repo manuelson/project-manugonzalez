@@ -6,7 +6,6 @@ body {
     font-family: 'Inter';
     font-size: 14px;
     position: relative;
-    height: 100vh;
     --logo-color: #ffffff;
     --text-color: #FFFFFF;
     --text-advice: rgb(65, 255, 201);
@@ -240,7 +239,7 @@ div.nav-cards {
         display:grid;
         grid-template-columns: repeat(2,minmax(0,1fr));
     }
-    
+
     .avatar-banner {
         width: 150px;
         height:150px;
