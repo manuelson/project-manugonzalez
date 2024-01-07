@@ -6,6 +6,7 @@ body {
     font-family: 'Inter';
     font-size: 14px;
     position: relative;
+    height: 100vh;
     --logo-color: #ffffff;
     --text-color: #FFFFFF;
     --text-advice: rgb(65, 255, 201);
@@ -21,6 +22,7 @@ body.light {
     font-family: 'Inter';
     font-size: 14px;
     position: relative;
+    height: 100vh;
     color: rgb(5, 25, 20);
     --logo-color: #161616;
     --text-color: #161616;
