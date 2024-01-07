@@ -33,7 +33,7 @@ body.light {
     --nav-card-hover:  rgba(5,25,20,.10);
 }
 
-.light body:before {
+body.light:before {
     filter: invert(1);
 }
 
