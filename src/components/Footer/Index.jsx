@@ -2,7 +2,7 @@
 export function Footer() {
 
     return (
-        <footer className="container my-5 mt-5">
+        <footer className="container my-5 mt-5 pb-5 pt-5">
             <hr />
             <div className="d-flex justify-content-between">
                 <small className="text-grey-only">2024
