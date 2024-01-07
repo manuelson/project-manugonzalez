@@ -15,6 +15,10 @@ body {
     --nav-card-hover: #ffffff0f;
 }
 
+.container {
+    --bs-gutter-x: 3rem;
+}
+
 body.light {
     background: rgb(240 249 247/1);
     color: white;
