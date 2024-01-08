@@ -213,8 +213,19 @@ div.nav-cards {
     grid-template-columns: repeat(3,minmax(0,1fr));
 }
 
-@media (max-width: 575.98px) {
+.popup {
+    backdrop-filter: blur(2px);
+}
 
+.popup .modal-content {
+    background: none;
+}
+
+.bgMenu {
+    background-color: rgb(5 25 20/1);
+}
+
+@media (max-width: 575.98px) {
     .skills {
         row-gap: .5rem;
         column-gap: .5rem;

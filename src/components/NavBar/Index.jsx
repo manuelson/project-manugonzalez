@@ -1,5 +1,6 @@
 import {LightModeToggle} from "../Toggle/Index.jsx";
 import {Link} from "react-router-dom";
+import {BurgerMenu} from "../BurgerMenu/Index.jsx";
 
 export function NavBar() {
 
@@ -18,15 +19,7 @@ export function NavBar() {
             </Link>
             <div className="d-flex gap-3 align-items-center">
                 <LightModeToggle></LightModeToggle>
-                <a className="rounded-circle button-menu d-flex justify-content-center align-items-center align-content-center">
-                    <svg
-                        className="icon-menu"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path d="M4 6H20M4 12H20M4 18H20" strokeWidth="2"/>
-                    </svg>
-                </a>
+                <BurgerMenu></BurgerMenu>
             </div>
         </header>
     )
