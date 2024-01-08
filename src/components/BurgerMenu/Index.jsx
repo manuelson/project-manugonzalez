@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import {Link} from "react-router-dom";
+import {GithubSocialSvg, TwitterSvg} from "../SvgIcons/Index.jsx";
 
 export function BurgerMenu() {
 
@@ -66,6 +67,15 @@ export function BurgerMenu() {
                         </Link>
                     </div>
                 </div>
+                <div className="d-flex gap-4 justify-content-center pt-4">
+                    <a href="https://twitter.com/manuelsoon" target="_blank" rel="noreferrer">
+                        <span className="social-icon pt-4">{<TwitterSvg/>}</span>
+                    </a>
+                    <a href="https://github.com/manuelson" target="_blank" rel="noreferrer">
+                        <span className="social-icon pt-4">{<GithubSocialSvg/>}</span>
+                    </a>
+                </div>
+
             </Modal>
         </>
     );

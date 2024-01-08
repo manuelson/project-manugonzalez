@@ -1,5 +1,4 @@
 import avatar from "../../assets/avatar-manu-memoji.png";
-
 export function Banner() {
 
     return (

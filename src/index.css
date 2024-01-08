@@ -234,6 +234,7 @@ div.nav-cards {
 
 .popup .modal-content {
     background: none;
+    border:0px;
 }
 
 .bgMenu {
@@ -251,6 +252,16 @@ div.nav-cards {
     border-style: dashed;
     border-radius: .5rem;
     aspect-ratio: 16/9;
+}
+
+.badge-icon {
+    fill: #ffffff;
+}
+
+.social-icon svg {
+    fill: #ffffff;
+    width: 24px;
+    height:24px;
 }
 
 @media (max-width: 575.98px) {
