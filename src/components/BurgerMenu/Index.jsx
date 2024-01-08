@@ -32,12 +32,14 @@ export function BurgerMenu() {
                 <div className="bgMenu px-3 py-3 rounded-3">
                     <div className="d-md-flex nav-cards gap-4 ">
                         <Link
+                            onClick={handleClose}
                             className="p-4 rounded-3 animate__animated  animate__fadeInUp"
                             to={`/blog`}>
                             <h3 className="h6">Blog</h3>
                             <p className="">Read what I share</p>
                         </Link>
                         <Link
+                            onClick={handleClose}
                             className="p-4 rounded-3 animate__animated  animate__fadeInUp card-delay-1"
                             to={`/portfolio`}>
                             <h3 className="h6">Portfolio</h3>
@@ -48,12 +50,14 @@ export function BurgerMenu() {
                     </div>
                     <div className="d-md-flex nav-cards gap-4 mt-4">
                         <Link
+                            onClick={handleClose}
                             className="p-4 rounded-3 animate__animated  animate__fadeInUp card-delay-2"
                             to={`/about`}>
                             <h3 className="h6">About</h3>
                             <p className="">Read more about me</p>
                         </Link>
                         <Link
+                            onClick={handleClose}
                             className="p-4 rounded-3 animate__animated  animate__fadeInUp card-delay-3"
                             to={`/portfolio`}>
                             <h3 className="h6">Let's talk</h3>
