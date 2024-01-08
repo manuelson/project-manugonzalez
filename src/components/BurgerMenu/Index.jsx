@@ -67,7 +67,7 @@ export function BurgerMenu() {
                         </Link>
                     </div>
                 </div>
-                <div className="d-flex gap-4 justify-content-center pt-4">
+                <div className="d-flex gap-4 justify-content-center pt-4 animate__animated  animate__fadeInUp card-delay-4">
                     <a href="https://twitter.com/manuelsoon" target="_blank" rel="noreferrer">
                         <span className="social-icon pt-4">{<TwitterSvg/>}</span>
                     </a>

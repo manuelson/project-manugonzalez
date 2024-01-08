@@ -163,6 +163,9 @@ div.nav-cards {
 .card-delay-3 {
     animation-delay: 0.6s;
 }
+.card-delay-4 {
+    animation-delay: 0.8s;
+}
 
 .nav-cards a:hover {
     background-color: var(--nav-card-hover);
