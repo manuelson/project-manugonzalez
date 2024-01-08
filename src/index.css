@@ -13,6 +13,7 @@ body {
     --nav-cards-bg: rgba(255, 255, 255, 0.04);
     --hr-bg: hsla(0,0%,100%,.30);
     --nav-card-hover: #ffffff0f;
+    --menu-bg-items: rgb(5 25 20/1);
 }
 
 .container {
@@ -34,6 +35,7 @@ body.light {
     --nav-cards-bg: rgba(5,25,20,.05);
     --hr-bg: rgba(5,25,20,.30);
     --nav-card-hover:  rgba(5,25,20,.10);
+    --menu-bg-items: rgb(240 249 247/1);
 }
 
 body.light:before {
@@ -214,7 +216,7 @@ div.nav-cards {
 }
 
 .popup {
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
 }
 
 .popup .modal-content {
@@ -222,7 +224,8 @@ div.nav-cards {
 }
 
 .bgMenu {
-    background-color: rgb(5 25 20/1);
+    border:0px;
+    background-color: var(--menu-bg-items);
 }
 
 @media (max-width: 575.98px) {

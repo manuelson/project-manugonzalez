@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import {Link} from "react-router-dom";
 
 export function BurgerMenu() {
-    
+
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
