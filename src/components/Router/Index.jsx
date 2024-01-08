@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom"
 import { Layout } from "../../layout/Index.jsx"
 import { ErrorPage } from "../../pages/ErrorPage.jsx";
 import {Home} from "../../pages/Home.jsx";
-import {Blog} from "../../pages/Blog.jsx";
+import {BlogPage} from "../../pages/Blog.jsx";
 import {About} from "../../pages/About.jsx";
 
 export const Router = createBrowserRouter([
@@ -18,7 +18,7 @@ export const Router = createBrowserRouter([
             {
                 index: "Blog",
                 path: '/blog',
-                element: <Blog/>
+                element: <BlogPage/>
             },
             {
                 index: "About",

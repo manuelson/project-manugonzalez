@@ -204,6 +204,10 @@ div.nav-cards {
     max-width: 960px;
 }
 
+#intro {
+    max-width: 960px;
+}
+
 .title {
     font-weight: 200;
 }
