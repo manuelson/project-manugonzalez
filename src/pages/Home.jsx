@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import {Banner} from "../components/Banner/Index.jsx";
 import {Skills} from "../components/Skills/Index.jsx";
-import {Blog} from "../components/Blog/Blog.jsx";
+import {Blog} from "../components/Blog/Index.jsx";
 
 export function Home() {
 
