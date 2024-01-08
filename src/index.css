@@ -181,6 +181,10 @@ div.nav-cards {
     transition: all .4s ease-in-out;
 }
 
+.text-small {
+    font-size:12px;
+}
+
 .skill-card:hover {
     background-color: var(--nav-card-hover);
     transition: all .6s ease-in-out;
