@@ -44,7 +44,7 @@ export function BurgerMenu() {
                             to={`/portfolio`}>
                             <h3 className="h6">Portfolio</h3>
                             <p>
-                                Projects, experiences knowledge
+                                Projects & knowledge
                             </p>
                         </Link>
                     </div>
