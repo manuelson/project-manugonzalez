@@ -36,16 +36,14 @@ export function BurgerMenu() {
                             className="p-4 rounded-3 animate__animated  animate__fadeInUp"
                             to={`/blog`}>
                             <h3 className="h6">Blog</h3>
-                            <p className="">Read what I share</p>
+                            <p>Read what I share</p>
                         </Link>
                         <Link
                             onClick={handleClose}
                             className="p-4 rounded-3 animate__animated  animate__fadeInUp card-delay-1"
                             to={`/portfolio`}>
                             <h3 className="h6">Portfolio</h3>
-                            <p>
-                                Projects & knowledge
-                            </p>
+                            <p>Projects & knowledge</p>
                         </Link>
                     </div>
                     <div className="d-md-flex nav-cards gap-4 mt-4">
@@ -59,11 +57,9 @@ export function BurgerMenu() {
                         <Link
                             onClick={handleClose}
                             className="p-4 rounded-3 animate__animated  animate__fadeInUp card-delay-3"
-                            to={`/portfolio`}>
+                            to={`mailto:manuelsoon@gmail.com`}>
                             <h3 className="h6">Let's talk</h3>
-                            <p>
-                                Any questions?
-                            </p>
+                            <p>Any questions?</p>
                         </Link>
                     </div>
                 </div>

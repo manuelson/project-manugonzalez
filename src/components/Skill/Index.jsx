@@ -13,6 +13,6 @@ export function Skill({icon, text}) {
 }
 
 Skill.propTypes = {
-    icon: PropTypes.string,
+    icon: PropTypes.object,
     text: PropTypes.string,
 };
