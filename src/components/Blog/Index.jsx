@@ -7,7 +7,7 @@ export function Blog() {
             <hr />
             <div className="d-grid gap-4 blog ">
                 <div className="d-flex align-items-center blog-box w-100 justify-content-center">
-                    <span className="text-advice">Comming soon</span>
+                    <span className="text-advice">Coming soon</span>
                 </div>
 
             </div>
