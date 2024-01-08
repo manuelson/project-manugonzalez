@@ -30,7 +30,7 @@ export function BurgerMenu() {
                 className="popup d-flex justify-content-center align-items-center"
             >
                 <div className="bgMenu px-3 py-3 rounded-3 animate__animated  animate__fadeInUp">
-                    <div className="d-md-flex nav-cards gap-4 ">
+                    <div className="d-grid nav-cards gap-3 ">
                         <Link
                             onClick={handleClose}
                             className="p-4 rounded-3 animate__animated  animate__fadeInUp"
@@ -45,8 +45,6 @@ export function BurgerMenu() {
                             <h3 className="h6">Portfolio</h3>
                             <p>Projects & knowledge</p>
                         </Link>
-                    </div>
-                    <div className="d-md-flex nav-cards gap-4 mt-4">
                         <Link
                             onClick={handleClose}
                             className="p-4 rounded-3 animate__animated  animate__fadeInUp card-delay-2"
