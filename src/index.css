@@ -15,6 +15,7 @@ body {
     --nav-card-hover: #ffffff0f;
     --menu-bg-items: rgb(5 25 20/1);
     --blog-border: hsla(0,0%,100%,.1);
+    font-weight: 200;
 }
 
 .container {
@@ -37,6 +38,8 @@ body.light {
     --nav-card-hover:  rgba(5,25,20,.10);
     --menu-bg-items: rgb(240 249 247/1);
     --blog-border: rgba(5,25,20,.1);
+    font-weight: 200;
+
 }
 
 body.light:before {
@@ -55,10 +58,6 @@ body:before {
     pointer-events: none;
 }
 
-
-p {
-    margin: 0;
-}
 a {
     text-decoration: none;
     cursor: pointer;
