@@ -14,12 +14,12 @@ body {
     --hr-bg: hsla(0,0%,100%,.30);
     --nav-card-hover: #ffffff0f;
     --menu-bg-items: rgb(5 25 20/1);
+    --blog-border: hsla(0,0%,100%,.1);
 }
 
 .container {
     --bs-gutter-x: 3rem;
 }
-
 body.light {
     background: rgb(240 249 247/1);
     color: white;
@@ -36,6 +36,7 @@ body.light {
     --hr-bg: rgba(5,25,20,.30);
     --nav-card-hover:  rgba(5,25,20,.10);
     --menu-bg-items: rgb(240 249 247/1);
+    --blog-border: rgba(5,25,20,.1);
 }
 
 body.light:before {
@@ -195,6 +196,10 @@ div.nav-cards {
     max-width: 960px;
 }
 
+#blog {
+    max-width: 960px;
+}
+
 #skills {
     max-width: 960px;
 }
@@ -226,6 +231,18 @@ div.nav-cards {
 .bgMenu {
     border:0px;
     background-color: var(--menu-bg-items);
+}
+
+.blog {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+
+.blog-box {
+    border-color: var(--blog-border);
+    border-width: 2px;
+    border-style: dashed;
+    border-radius: .5rem;
+    aspect-ratio: 16/9;
 }
 
 @media (max-width: 575.98px) {
