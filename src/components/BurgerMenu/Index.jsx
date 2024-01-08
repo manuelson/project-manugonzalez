@@ -29,7 +29,7 @@ export function BurgerMenu() {
                 onHide={handleClose}
                 className="popup d-flex justify-content-center align-items-center"
             >
-                <div className="bgMenu px-3 py-3 rounded-3">
+                <div className="bgMenu px-3 py-3 rounded-3 animate__animated  animate__fadeInUp">
                     <div className="d-md-flex nav-cards gap-4 ">
                         <Link
                             onClick={handleClose}
