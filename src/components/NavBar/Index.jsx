@@ -18,8 +18,8 @@ export function NavBar() {
 
             </Link>
             <div className="d-flex gap-3 align-items-center">
-                <LightModeToggle></LightModeToggle>
-                <BurgerMenu></BurgerMenu>
+                <LightModeToggle />
+                <BurgerMenu />
             </div>
         </header>
     )
