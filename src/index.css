@@ -269,6 +269,10 @@ div.nav-cards {
 }
 
 @media (max-width: 575.98px) {
+    div.nav-cards {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+
     .blog {
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
