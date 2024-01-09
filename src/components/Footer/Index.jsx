@@ -1,6 +1,4 @@
-
 export function Footer() {
-
     return (
         <footer className="container my-5 mt-5 pb-5 pt-5">
             <hr />
@@ -9,8 +7,8 @@ export function Footer() {
                     <span className="hidden md:inline-flex"> - Nothing reserved :)</span>
                 </small>
                 <small className="text-grey-only">Built with
-                    <a href="https://react.dev/" className="text-advice" target="_blank"> React</a> and
-                    <a href="https://supabase.com/" className="text-advice" target="_blank"> Supabase</a>
+                    <a href="https://react.dev/" className="text-advice" target="_blank" rel="noreferrer"> React</a> and
+                    <a href="https://supabase.com/" className="text-advice" target="_blank" rel="noreferrer"> Supabase</a>
                 </small>
             </div>
         </footer>

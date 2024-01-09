@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom"
-import { Layout } from "../../layout/Index.jsx"
-import { ErrorPage } from "../../pages/ErrorPage.jsx";
-import {Home} from "../../pages/Home.jsx";
-import {BlogPage} from "../../pages/Blog.jsx";
-import {About} from "../../pages/About.jsx";
+import { Layout } from "src/layout/Index.jsx"
+import { ErrorPage } from "src/pages/ErrorPage.jsx";
+import {Home} from "src/pages/Home.jsx";
+import {BlogPage} from "src/pages/Blog.jsx";
+import {About} from "src/pages/About.jsx";
 
 export const Router = createBrowserRouter([
     {

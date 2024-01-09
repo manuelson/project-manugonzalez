@@ -1,6 +1,6 @@
 import {LightModeToggle} from "../Toggle/Index.jsx";
 import {Link} from "react-router-dom";
-import {BurgerMenu} from "../BurgerMenu/Index.jsx";
+import {BurgerMenu} from "src/BurgerMenu/Index.jsx";
 
 export function NavBar() {
 
