@@ -5,7 +5,7 @@ import {BurgerMenu} from "src/components/BurgerMenu.jsx";
 export function NavBar() {
 
     return (
-        <header className="mt-4 w-90 justify-content-center d-flex justify-content-between container">
+        <header className="mt-4 d-flex justify-content-between container">
             <Link
                 className="logo rounded-5"
                 to={`/`}>
