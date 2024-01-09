@@ -25,11 +25,6 @@ export function LastPosts() {
                         <div key={`post-${index}`} className="d-flex align-items-center blog-box w-100 justify-content-center">
                             <span>
                                  <Link to={`/post/${post.id}`}>
-                                     <div className="position-absolute px-3 py-3 d-flex">
-                                         <span className="badge text-advice">React</span>
-                                         <span className="badge text-advice">Javascript</span>
-                                     </div>
-
                                      <img
                                          className="blog-image rounded-3"
                                          src={GetImageAssets(post.image)}
