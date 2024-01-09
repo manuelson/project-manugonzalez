@@ -3,13 +3,13 @@ import BlogRepository from "src/service/BlogApi.jsx";
 import {Link} from "react-router-dom";
 import {GetImageAssets} from "../utils/GetImageAssets.jsx";
 
-export function Blog() {
+export function LastPosts() {
 
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
         let blog = new BlogRepository()
-        blog.getPosts().then((data) => {
+        blog.getLastPosts().then((data) => {
             setPosts(data)
         })
     }, [BlogRepository]);
@@ -19,7 +19,7 @@ export function Blog() {
             <section id="blog" className="container mt-5">
                 <h2 className="h6">Last Posts</h2>
                 <hr />
-                <div className="d-grid gap-3 blog">
+                <div className="d-grid gap-3 blog ">
                 {
                     posts.map((post, index) => (
                         <div key={`post-${index}`} className="d-flex align-items-center blog-box w-100 justify-content-center">

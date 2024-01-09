@@ -21,5 +21,15 @@ export default class Database extends Component {
         return data
     }
 
+    async selectLimit(table, limit) {
+        const { data } = await this.supabase
+            .from(table)
+            .select()
+            .limit(limit)
+            .order('created_at', {ascending: false})
+
+        return data
+    }
+
 }
 

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import {Banner} from "src/components/Banner.jsx";
 import {Skills} from "src/components/Skills.jsx";
-import {Blog} from "src/components/Blog.jsx";
+import {LastPosts} from "../components/LastPosts.jsx";
 
 export function Home() {
 
@@ -12,7 +12,7 @@ export function Home() {
     return (
         <>
             <Banner />
-            <Blog />
+            <LastPosts />
             <Skills />
         </>
     )
