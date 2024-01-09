@@ -2,7 +2,7 @@ import avatar from "src/assets/avatar-manu-memoji.png";
 export function Banner() {
 
     return (
-        <section className="d-md-flex header-banner justify-content-center container">
+        <section className="d-md-flex header-banner justify-content-between container">
             <img src={avatar} alt="avatar" className="avatar-banner" />
             <div className="mx-md-5 mx-lg-5 mx-xl-5">
                 <h1 className="mb-2 title">Manu
