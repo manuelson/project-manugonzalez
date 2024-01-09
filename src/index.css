@@ -282,7 +282,7 @@ div.nav-cards {
         --bs-gutter-x: 3rem;
     }
     .blog {
-        grid-template-columns: repeat(1,minmax(0,1fr));
+        grid-template-columns: repeat(2,minmax(0,1fr));
     }
     .skills {
         row-gap: .5rem;
@@ -313,7 +313,7 @@ div.nav-cards {
         --bs-gutter-x: 3rem;
     }
     .blog {
-        grid-template-columns: repeat(1,minmax(0,1fr));
+        grid-template-columns: repeat(2,minmax(0,1fr));
     }
     .skills {
         row-gap: .5rem;
@@ -336,5 +336,11 @@ div.nav-cards {
     }
     .title {
         font-size:25px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        --bs-gutter-x: 3rem;
     }
 }
