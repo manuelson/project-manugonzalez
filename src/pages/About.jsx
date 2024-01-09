@@ -1,4 +1,4 @@
-import {Banner} from "../components/Banner/Index.jsx";
+import {Banner} from "src/components/Banner.jsx";
 
 export function About() {
   return (

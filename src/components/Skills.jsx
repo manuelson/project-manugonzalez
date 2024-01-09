@@ -1,4 +1,4 @@
-import {Skill} from "../Skill/Index.jsx";
+import {Skill} from "src/components/Skill.jsx";
 import {
     BootstrapSvg,
     CssSvg, GithubSvg,
@@ -9,7 +9,7 @@ import {
     TailwindSvg,
     TypescriptSvg,
     SymfonySvg
-} from "../SvgIcons/Index.jsx";
+} from "src/components/SvgIcons.jsx";
 
 export function Skills() {
 

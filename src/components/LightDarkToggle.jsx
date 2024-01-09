@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-
-export const LightModeToggle = () => {
+export const LightDarkToggle = () => {
     const [isLight, setIsLight] = useState(false);
 
     const handleToggle = () => {

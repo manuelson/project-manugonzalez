@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 export function Skill({icon, text}) {
 
     if (icon && text) {

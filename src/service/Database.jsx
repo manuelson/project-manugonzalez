@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 import { createClient } from "@supabase/supabase-js";
 
 export default class Database extends Component {

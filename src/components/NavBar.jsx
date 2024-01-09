@@ -1,6 +1,6 @@
-import {LightModeToggle} from "../Toggle/Index.jsx";
+import {LightDarkToggle} from "src/components/LightDarkToggle.jsx";
 import {Link} from "react-router-dom";
-import {BurgerMenu} from "src/BurgerMenu/Index.jsx";
+import {BurgerMenu} from "src/components/BurgerMenu.jsx";
 
 export function NavBar() {
 
@@ -18,7 +18,7 @@ export function NavBar() {
 
             </Link>
             <div className="d-flex gap-3 align-items-center">
-                <LightModeToggle />
+                <LightDarkToggle />
                 <BurgerMenu />
             </div>
         </header>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import {Link} from "react-router-dom";
-import {GithubSocialSvg, TwitterSvg} from "src/SvgIcons/Index.jsx";
+import {GithubSocialSvg, TwitterSvg} from "src/components/SvgIcons.jsx";
 
 export function BurgerMenu() {
 

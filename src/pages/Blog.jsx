@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import {Blog} from "../components/Blog/Index.jsx";
+import {Blog} from "src/components/Blog.jsx";
 
 export function BlogPage() {
 

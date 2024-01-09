@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import { NavBar } from "../components/NavBar/Index.jsx";
-import { Footer } from "../components/Footer/Index.jsx";
+import { NavBar } from "src/components/NavBar.jsx";
+import { Footer } from "src/components/Footer.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export function Layout() {
