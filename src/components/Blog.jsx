@@ -13,6 +13,10 @@ export function Blog() {
         })
     }, [BlogRepository]);
 
+    const getAssetSrc = (asset) => {
+        return new URL(`../assets/${asset}`, import.meta.url).href
+    };
+
     return (
         <>
             <section id="blog" className="container mt-5">
@@ -26,7 +30,7 @@ export function Blog() {
                                  <Link to={`/post/${post.id}`}>
                                      <img
                                          className="blog-image rounded-3"
-                                         src={`/assets/${post.photo}`}
+                                         src={getAssetSrc(post.photo)}
                                          alt={post.title}
                                           />
                                      <h3 className="pt-3">{post.title}</h3>
