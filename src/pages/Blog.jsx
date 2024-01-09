@@ -14,7 +14,7 @@ export function BlogPage() {
                     <h1 className="mb-2">
                         About my <span className="text-advice">Blog</span></h1>
                     <p className="dark:text-grey-light-900 md:text-largest">
-                        All about web development. Want to hear more? You can also find me on <a target="_blank" href="https://twitter.com/manuelsoon" className="text-advice">Twitter</a>.
+                        All about web development. Want to hear more? You can also find me on <a target="_blank" href="https://twitter.com/manuelsoon" className="text-advice" rel="noreferrer">Twitter</a>.
                     </p>
                 </div>
             </section>
