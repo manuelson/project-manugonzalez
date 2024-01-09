@@ -1,4 +1,4 @@
-import avatar from "../../assets/avatar-manu-memoji.png";
+import avatar from "src/assets/avatar-manu-memoji.png";
 export function Banner() {
 
     return (

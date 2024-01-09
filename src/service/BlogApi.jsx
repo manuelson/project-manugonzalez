@@ -1,5 +1,4 @@
-import { createClient } from "@supabase/supabase-js";
-import Database from "../service/Database.jsx";
+import Database from "./Database.jsx";
 
 export default class BlogRepository extends Database {
 
