@@ -4,7 +4,7 @@ export function Banner() {
     return (
         <section className="d-md-flex header-banner justify-content-center container">
             <img src={avatar} alt="avatar" className="avatar-banner" />
-            <div className="mx-5">
+            <div className="mx-md-5 mx-lg-5 mx-xl-5">
                 <h1 className="mb-2 title">Manu
                     <span className="text-advice"> Gonzalez</span>,
                     <br /> full-stack developer
