@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import BlogRepository from "src/service/BlogApi.jsx";
 import {Link} from "react-router-dom";
+import {GetImageAssets} from "../utils/GetImageAssets.jsx";
 
 export function Blog() {
 
@@ -12,10 +13,6 @@ export function Blog() {
             setPosts(data)
         })
     }, [BlogRepository]);
-
-    const getAssetSrc = (asset) => {
-        return new URL(`../assets/${asset}`, import.meta.url).href
-    };
 
     return (
         <>
@@ -30,11 +27,11 @@ export function Blog() {
                                  <Link to={`/post/${post.id}`}>
                                      <img
                                          className="blog-image rounded-3"
-                                         src={getAssetSrc(post.photo)}
+                                         src={GetImageAssets(post.image)}
                                          alt={post.title}
                                           />
                                      <h3 className="pt-3">{post.title}</h3>
-                                     <p className="mt-3">{post.body}</p>
+                                     <p className="mt-3">{post.resume}</p>
                                  </Link>
                             </span>
                         </div>
