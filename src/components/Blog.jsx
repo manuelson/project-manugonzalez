@@ -23,8 +23,14 @@ export function Blog() {
                     posts.map((post, index) => (
                         <div key={`post-${index}`} className="d-flex align-items-center blog-box w-100 justify-content-center">
                             <span>
-                                 <Link className="text-advice" to={`/post/${post.id}`}>
-                                            {post.title}
+                                 <Link to={`/post/${post.id}`}>
+                                     <img
+                                         className="blog-image rounded-3"
+                                         src={`src/assets/blog/${post.photo}`}
+                                         alt={post.title}
+                                          />
+                                     <h3 className="pt-3">{post.title}</h3>
+                                     <p className="mt-3">{post.body}</p>
                                  </Link>
                             </span>
                         </div>

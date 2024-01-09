@@ -15,12 +15,14 @@ body {
     --nav-card-hover: #ffffff0f;
     --menu-bg-items: rgb(5 25 20/1);
     --blog-border: hsla(0,0%,100%,.1);
-    font-weight: 200;
+    --blog-resume-text-color: hsla(0,0%,100%,.4);
+    font-weight: 300;
 }
 
 .container {
-    --bs-gutter-x: 3rem;
+    --bs-gutter-x: 12rem;
 }
+
 body.light {
     background: rgb(240 249 247/1);
     color: white;
@@ -38,7 +40,8 @@ body.light {
     --nav-card-hover:  rgba(5,25,20,.10);
     --menu-bg-items: rgb(240 249 247/1);
     --blog-border: rgba(5,25,20,.1);
-    font-weight: 200;
+    --blog-resume-text-color: rgb(5 25 20/1);
+    font-weight: 300;
 
 }
 
@@ -199,22 +202,6 @@ div.nav-cards {
     height: 35px;
 }
 
-#pages {
-    max-width: 960px;
-}
-
-#blog {
-    max-width: 960px;
-}
-
-#skills {
-    max-width: 960px;
-}
-
-#intro {
-    max-width: 960px;
-}
-
 .title {
     font-weight: 200;
 }
@@ -249,13 +236,36 @@ div.nav-cards {
     grid-template-columns: repeat(3,minmax(0,1fr));
 }
 
+.blog a {
+    color: var(--text-color);
+}
+
+.blog p {
+    font-size:1.03rem;
+    color: var(--blog-resume-text-color);
+}
+
+.blog h3 {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
 .blog-box {
+    aspect-ratio: 16/9;
+}
+
+.blog-box-empty {
     border-color: var(--blog-border);
     border-width: 2px;
     border-style: dashed;
     border-radius: .5rem;
     aspect-ratio: 16/9;
 }
+
+.blog-image {
+   width: 100%;
+}
+
 
 .badge-icon {
     fill: #ffffff;
@@ -268,6 +278,9 @@ div.nav-cards {
 }
 
 @media (max-width: 575.98px) {
+    .container {
+        --bs-gutter-x: 3rem;
+    }
     .blog {
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
@@ -296,6 +309,9 @@ div.nav-cards {
 }
 
 @media (max-width: 767.98px) {
+    .container {
+        --bs-gutter-x: 3rem;
+    }
     .blog {
         grid-template-columns: repeat(1,minmax(0,1fr));
     }
