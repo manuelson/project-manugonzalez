@@ -26,7 +26,7 @@ export function Blog() {
                                  <Link to={`/post/${post.id}`}>
                                      <img
                                          className="blog-image rounded-3"
-                                         src={`src/assets/blog/${post.photo}`}
+                                         src={`/assets/blog/${post.photo}`}
                                          alt={post.title}
                                           />
                                      <h3 className="pt-3">{post.title}</h3>
