@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import {Blog} from "src/components/Blog.jsx";
+import {Posts} from "src/components/Posts.jsx";
 
 export function BlogPage() {
 
@@ -18,7 +18,7 @@ export function BlogPage() {
                     </p>
                 </div>
             </section>
-            <Blog />
+            <Posts />
         </>
     )
 }

@@ -3,7 +3,7 @@ import BlogRepository from "src/service/BlogApi.jsx";
 import {Link} from "react-router-dom";
 import {GetImageAssets} from "../utils/GetImageAssets.jsx";
 
-export function Blog() {
+export function Posts() {
 
     const [posts, setPosts] = useState([])
 
